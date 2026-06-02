@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0F172A">
+    <title>دليل الاستخدام | MentraGym Lite</title>
+    <link rel="icon" href="assets/logo.png">
+    <!-- الخطوط ومكتبات التصميم -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="assets/Tailwind.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #F8FAFC; overflow-x: hidden; }
+        .fade-up { animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; transform: translateY(30px); }
+        @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+        
+        /* تدرج لوني للخلفية */
+        .hero-bg { background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); }
+        
+        /* تأثير الصور */
+        .tutorial-img { 
+            transition: transform 0.5s ease, box-shadow 0.5s ease; 
+            border-radius: 1rem;
+            object-fit: cover;
+            object-position: top;
+            width: 100%;
+            border: 4px solid #F1F5F9;
+        }
+        .img-wrapper:hover .tutorial-img { transform: scale(1.03); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+    </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <!-- ================= شريط التنقل العلوي ================= -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-[#06B6D4] to-[#3B82F6] flex items-center justify-center text-white shadow-lg shrink-0">
+                        <i class="fas fa-book-open text-sm md:text-lg"></i>
+                    </div>
+                    <span class="font-black text-lg md:text-xl text-slate-900 tracking-tight">دليل <span class="text-[#06B6D4]">الاستخدام</span></span>
+                </div>
+                
+                <!-- زر العودة للرئيسية -->
+                <a href="index.html" class="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-xl font-bold transition-all text-sm md:text-base border border-slate-200 active:scale-95">
+                    <i class="fas fa-arrow-left text-[#3B82F6]"></i> <span class="hidden sm:inline">العودة للرئيسية</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= الهيدر (Hero) ================= -->
+    <header class="hero-bg pt-32 pb-16 md:pt-40 md:pb-24 text-center relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl mix-blend-screen"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl mix-blend-screen"></div>
+        
+        <div class="relative z-10 max-w-3xl mx-auto px-4 fade-up">
+            <span class="inline-block py-1 px-3 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 text-xs font-bold tracking-widest mb-4">خطوة بخطوة</span>
+            <h1 class="text-3xl md:text-5xl font-black text-white leading-tight mb-4">كيف تستخدم نظام <br> MentraGym Lite؟</h1>
+            <p class="text-slate-300 font-semibold text-sm md:text-base leading-relaxed">
+                هذا الدليل المرئي يشرح لك دورة العمل الكاملة داخل النظام؛ بدءاً من تأسيس قاعدة البيانات على جهازك، مروراً بإضافة الأعضاء والتمارين، وحتى تأمين بياناتك بالنسخ الاحتياطي.
+            </p>
+        </div>
+    </header>
+
+    <!-- ================= الخط الزمني (Steps) ================= -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <div class="space-y-16 md:space-y-24">
+
+            <!-- Step 0: Start -->
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 fade-up" style="animation-delay: 0.1s;">
+                <div class="w-full md:w-1/2 img-wrapper relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#06B6D4] to-[#3B82F6] rounded-2xl transform rotate-3 opacity-20"></div>
+                    <!-- ضع الصورة في مسارها الصحيح -->
+                    <img src="assets/start.PNG" alt="بوابة الدخول" class="tutorial-img relative z-10 bg-white shadow-xl" onerror="this.src='https://placehold.co/600x400/1E293B/FFF?text=start.png'">
+                </div>
+                <div class="w-full md:w-1/2 space-y-4">
+                    <span class="w-10 h-10 rounded-full bg-cyan-100 text-cyan-600 flex items-center justify-center font-black text-xl mb-4">1</span>
+                    <h2 class="text-2xl md:text-3xl font-black text-slate-800">البداية وتأسيس الجيم</h2>
+                    <p class="text-slate-500 font-bold leading-relaxed text-sm md:text-base">
+                        شاشة <code>subscriptions</code> هي بوابة عبورك للنظام. نظراً لأن النظام يعمل (Offline)، ستقوم هنا بإنشاء "قاعدة بيانات محلية" داخل متصفحك.
+                    </p>
+                    <ul class="space-y-2 text-sm font-semibold text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> تأسيس الصالة لأول مرة باسمك ورقم هاتفك.</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> ميزة "الدخول السريع" التي تتذكر حسابك وتسمح بالدخول بكلمة المرور فقط.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 1: Main Dashboard -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 fade-up">
+                <div class="w-full md:w-1/2 img-wrapper relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#3B82F6] to-purple-500 rounded-2xl transform -rotate-3 opacity-20"></div>
+                    <img src="assets/step.PNG" alt="الرئيسية" class="tutorial-img relative z-10 bg-white shadow-xl" onerror="this.src='https://placehold.co/600x400/1E293B/FFF?text=step.png'">
+                </div>
+                <div class="w-full md:w-1/2 space-y-4">
+                    <span class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-black text-xl mb-4">2</span>
+                    <h2 class="text-2xl md:text-3xl font-black text-slate-800">لوحة التحكم الرئيسية</h2>
+                    <p class="text-slate-500 font-bold leading-relaxed text-sm md:text-base">
+                        شاشة <code>main</code> تعطيك نظرة عامة (Birds-eye view) على وضع الجيم الحالي لمدير الصالة.
+                    </p>
+                    <ul class="space-y-2 text-sm font-semibold text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> إحصائيات سريعة: عدد الأعضاء النشطين، والاشتراكات المنتهية.</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> ملخص الإيرادات والمصروفات.</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> إمكانية التنقل السريع عبر القائمة الجانبية الذكية.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 2: Members -->
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 fade-up">
+                <div class="w-full md:w-1/2 img-wrapper relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-emerald-400 to-[#06B6D4] rounded-2xl transform rotate-3 opacity-20"></div>
+                    <img src="assets/step1.PNG" alt="إدارة الأعضاء" class="tutorial-img relative z-10 bg-white shadow-xl" onerror="this.src='https://placehold.co/600x400/1E293B/FFF?text=step1.png'">
+                </div>
+                <div class="w-full md:w-1/2 space-y-4">
+                    <span class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-black text-xl mb-4">3</span>
+                    <h2 class="text-2xl md:text-3xl font-black text-slate-800">إدارة الأعضاء والاشتراكات</h2>
+                    <p class="text-slate-500 font-bold leading-relaxed text-sm md:text-base">
+                        شاشة <code>members</code> هي العصب الرئيسي لموظف الاستقبال لضبط اشتراكات اللاعبين.
+                    </p>
+                    <ul class="space-y-2 text-sm font-semibold text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> تسجيل بيانات العضو الجديد مع صورته (اختياري).</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> تحديد تواريخ بداية ونهاية الاشتراك، وتلوين الحالات (نشط/منتهي).</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> محرك بحث سريع للوصول للعضو برقم الهاتف أو الاسم.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 3: Exercises -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 fade-up">
+                <div class="w-full md:w-1/2 img-wrapper relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-orange-400 to-rose-500 rounded-2xl transform -rotate-3 opacity-20"></div>
+                    <img src="assets/step2.PNG" alt="التمارين" class="tutorial-img relative z-10 bg-white shadow-xl" onerror="this.src='https://placehold.co/600x400/1E293B/FFF?text=step2.png'">
+                </div>
+                <div class="w-full md:w-1/2 space-y-4">
+                    <span class="w-10 h-10 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center font-black text-xl mb-4">4</span>
+                    <h2 class="text-2xl md:text-3xl font-black text-slate-800">تأسيس مكتبة التمارين</h2>
+                    <p class="text-slate-500 font-bold leading-relaxed text-sm md:text-base">
+                        في شاشة <code>exercises</code>، يقوم الكابتن ببناء القاموس الخاص بتمارين الجيم لاستخدامها لاحقاً في الخطط.
+                    </p>
+                    <ul class="space-y-2 text-sm font-semibold text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> إضافة تمارين مقسمة حسب العضلة (صدر، ظهر، أرجل، إلخ).</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> يمكن إضافة رابط فيديو يوتيوب يوضح الأداء الصحيح للتمرين.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 4: Plans -->
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 fade-up">
+                <div class="w-full md:w-1/2 img-wrapper relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-purple-500 to-indigo-500 rounded-2xl transform rotate-3 opacity-20"></div>
+                    <img src="assets/step3.PNG" alt="الخطط التدريبية" class="tutorial-img relative z-10 bg-white shadow-xl" onerror="this.src='https://placehold.co/600x400/1E293B/FFF?text=step3.png'">
+                </div>
+                <div class="w-full md:w-1/2 space-y-4">
+                    <span class="w-10 h-10 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center font-black text-xl mb-4">5</span>
+                    <h2 class="text-2xl md:text-3xl font-black text-slate-800">إنشاء الخطط التدريبية</h2>
+                    <p class="text-slate-500 font-bold leading-relaxed text-sm md:text-base">
+                        شاشة <code>plans</code> تسمح للمدرب بإنشاء قوالب جاهزة (Templates) مثل خطة Push/Pull/Legs أو خطة تضخيم.
+                    </p>
+                    <ul class="space-y-2 text-sm font-semibold text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> سحب التمارين من المكتبة وإضافتها للأيام التدريبية.</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> تخصيص عدد المجموعات (Sets) والتكرارات (Reps) لكل تمرين.</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> تعيين الخطة لعضو معين ليبدأ بتنفيذها.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 5: Tracking -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 fade-up">
+                <div class="w-full md:w-1/2 img-wrapper relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#3B82F6] to-cyan-400 rounded-2xl transform -rotate-3 opacity-20"></div>
+                    <img src="assets/step4.PNG" alt="المتابعة" class="tutorial-img relative z-10 bg-white shadow-xl" onerror="this.src='https://placehold.co/600x400/1E293B/FFF?text=step4.png'">
+                </div>
+                <div class="w-full md:w-1/2 space-y-4">
+                    <span class="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-black text-xl mb-4"><i class="fas fa-stopwatch text-base"></i></span>
+                    <h2 class="text-2xl md:text-3xl font-black text-slate-800">سجل التمارين والمتابعة الحية</h2>
+                    <p class="text-slate-500 font-bold leading-relaxed text-sm md:text-base">
+                        شاشة <code>tracking</code> هي الأهم للمدربين داخل صالة الجيم (متوافقة جداً مع الموبايل).
+                    </p>
+                    <ul class="space-y-2 text-sm font-semibold text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> اختيار العضو والبدء في تسجيل أدائه في يومه التدريبي الحالي.</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> تسجيل الأوزان التي رفعها لمقارنتها لاحقاً وتتبع التطور التقدمي.</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> مؤقت زمني (Timer) للراحة بين المجموعات.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 6: Finances -->
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 fade-up">
+                <div class="w-full md:w-1/2 img-wrapper relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-green-500 to-emerald-400 rounded-2xl transform rotate-3 opacity-20"></div>
+                    <img src="assets/step5.PNG" alt="المالية" class="tutorial-img relative z-10 bg-white shadow-xl" onerror="this.src='https://placehold.co/600x400/1E293B/FFF?text=step5.png'">
+                </div>
+                <div class="w-full md:w-1/2 space-y-4">
+                    <span class="w-10 h-10 rounded-full bg-green-100 text-green-600 flex items-center justify-center font-black text-xl mb-4"><i class="fas fa-wallet text-base"></i></span>
+                    <h2 class="text-2xl md:text-3xl font-black text-slate-800">الإدارة المالية والأرباح</h2>
+                    <p class="text-slate-500 font-bold leading-relaxed text-sm md:text-base">
+                        شاشة <code>finances</code> مخصصة لمدير الجيم لضبط الحسابات ومعرفة الأرباح الصافية.
+                    </p>
+                    <ul class="space-y-2 text-sm font-semibold text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> تسجيل المصروفات اليومية (كهرباء، صيانة، رواتب).</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> تسجيل الإيرادات (اشتراكات، مبيعات بار).</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> حساب صافي الربح بشكل أوتوماتيكي.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 7: Settings -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 fade-up">
+                <div class="w-full md:w-1/2 img-wrapper relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-slate-400 to-slate-600 rounded-2xl transform -rotate-3 opacity-20"></div>
+                    <img src="assets/step6.PNG" alt="الإعدادات" class="tutorial-img relative z-10 bg-white shadow-xl" onerror="this.src='https://placehold.co/600x400/1E293B/FFF?text=step6.png'">
+                </div>
+                <div class="w-full md:w-1/2 space-y-4">
+                    <span class="w-10 h-10 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-black text-xl mb-4"><i class="fas fa-cog text-base"></i></span>
+                    <h2 class="text-2xl md:text-3xl font-black text-slate-800">الإعدادات وطاقم العمل</h2>
+                    <p class="text-slate-500 font-bold leading-relaxed text-sm md:text-base">
+                        شاشة <code>settings</code> تتيح للمالك إدارة فريقه وتعديل بيانات الجيم الأساسية.
+                    </p>
+                    <ul class="space-y-2 text-sm font-semibold text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> إضافة حسابات للمدربين وموظفي الاستقبال بكلمات مرور مشفرة.</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> نظام صلاحيات (RBAC) يمنع موظف الاستقبال من رؤية الحسابات المالية مثلاً.</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> تعديل اسم الجيم واسم المدير ورقم الهاتف.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 8: Backup -->
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 fade-up">
+                <div class="w-full md:w-1/2 img-wrapper relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-rose-400 to-[#3B82F6] rounded-2xl transform rotate-3 opacity-20"></div>
+                    <img src="assets/step7.PNG" alt="النسخ الاحتياطي" class="tutorial-img relative z-10 bg-white shadow-xl" onerror="this.src='https://placehold.co/600x400/1E293B/FFF?text=step7.png'">
+                </div>
+                <div class="w-full md:w-1/2 space-y-4">
+                    <span class="w-10 h-10 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-black text-xl mb-4"><i class="fas fa-database text-base"></i></span>
+                    <h2 class="text-2xl md:text-3xl font-black text-slate-800">النسخ الاحتياطي للأمان</h2>
+                    <p class="text-rose-600 font-bold leading-relaxed text-sm md:text-base">
+                        خطوة حيوية! شاشة <code>backup</code> تضمن عدم ضياع بياناتك لأنها محفوظة في المتصفح.
+                    </p>
+                    <ul class="space-y-2 text-sm font-semibold text-slate-600">
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> تصدير البيانات (Export) في ملف JSON وحفظه على جهازك أو فلاش ميموري.</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> استرجاع البيانات (Import) في حالة تغيير اللابتوب أو مسح المتصفح.</li>
+                        <li><i class="fas fa-check text-emerald-500 ml-2"></i> زر الطوارئ (إعادة ضبط المصنع) لمسح النظام بالكامل والبدء من الصفر.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- زر الدخول الختامي -->
+        <div class="mt-24 text-center pb-12 fade-up border-t border-slate-200 pt-16">
+            <h3 class="text-2xl font-black text-slate-800 mb-4">هل أنت مستعد لتنظيم الجيم الخاص بك؟</h3>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="subscriptions.html" class="bg-gradient-to-l from-[#06B6D4] to-[#3B82F6] text-white px-8 py-4 rounded-xl font-black text-lg shadow-lg hover:opacity-90 transition-all active:scale-95 flex items-center gap-2">
+                    <i class="fas fa-rocket"></i> تشغيل النظام الآن
+                </a>
+                <a href="index.html" class="text-slate-500 hover:text-slate-800 font-bold underline px-4 py-2">
+                    العودة لصفحة المعلومات
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // تأثير الظهور التدريجي أثناء التمرير
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up').forEach((el) => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
