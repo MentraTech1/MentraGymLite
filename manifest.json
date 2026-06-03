@@ -2,7 +2,7 @@
   "name": "Mentra Gym Lite",
   "short_name": "Mentra Gym Lite",
   "description": "برنامج ادارة مطاعم يعمل بدون اتصال مباشر مخزن علي الجهاز",
-  "start_url": "./index.html",
+  "start_url": "https://mentratech1.github.io/MentraGymLite/index.html",
   "display": "standalone",
   "background_color": "#F8FAFC",
   "theme_color": "#0284C7",
@@ -29,7 +29,7 @@
       "name": "الذهاب للعيادة",
       "short_name": "العيادة",
       "description": "فتح لوحة تحكم العيادة",
-      "url": "./dashboard.html",
+      "url": "https://mentratech1.github.io/MentraGymLite/dashboard.html",
       "icons": [{ "src": "./assets/logo.png", "sizes": "192x192" }]
     }
   ]
